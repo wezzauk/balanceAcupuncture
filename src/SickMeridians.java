@@ -8,6 +8,7 @@ public class SickMeridians {
     private static final String smallIntestine = "Small Intestine";
     private static final String lung = "Lung";
     private static final String heart = "Heart";
+    private static final String pericardium = "Pericardium";
     private static final String tripleBurner = "Triple Burner";
 
     //GETTERS

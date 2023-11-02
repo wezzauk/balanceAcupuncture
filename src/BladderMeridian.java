@@ -1,11 +1,14 @@
 public class BladderMeridian {
-    private final String s1 = "Small Intestine";
-    private final String s2 = "Lung";
-    private final String s3 = "Kidney";
-    private final String s4 = "Lung";
-    private final String s5 = "Small Intestine";
+    private static final String sickMeridian = "Bladder";
+    private static final String s1 = "Small Intestine";
+    private static final String s2 = "Lung";
+    private static final String s3 = "Kidney";
+    private static final String s4 = "Lung";
+    private static final String s5 = "Small Intestine";
 
     //GETTERS
+    public String getSickMeridian() { return sickMeridian; };
+
     public String getS1(){
         return s1;
     }
@@ -26,4 +29,14 @@ public class BladderMeridian {
         return s5;
     }
 
+
+    //METHODS
+    public static void bladderSystems() {
+        Systems.printTreatingSystems(sickMeridian, s1, s2, s3, s4, s5);
+
+    }
+
+
 }
+
+
