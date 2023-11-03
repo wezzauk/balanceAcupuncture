@@ -28,6 +28,7 @@ public class Main {
         } while (chooseAgain == 1);
 
         System.out.println("Thank you for using the Balance Acupuncture App");
+        scanner.close();
     }
 
 
@@ -40,5 +41,4 @@ public class Main {
         int sickMeridian = scanner.nextInt();
         SickMeridians.pickSickMeridianOptions(sickMeridian);
     }
-
 }
