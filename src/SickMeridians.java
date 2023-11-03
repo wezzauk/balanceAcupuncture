@@ -65,4 +65,45 @@ public class SickMeridians {
         System.out.println(("9. " + heart));
         System.out.println(("10. " + tripleBurner));
     }
+
+    public static void pickSickMeridianOptions(int sickMeridian){
+        switch (sickMeridian) {
+            case 1:
+                BladderMeridian.bladderSystems();
+                break;
+            case 2:
+                StomachMeridian.stomachSystems();
+                break;
+            case 3:
+                GallBladderMeridian.gallBladderSystems();
+                break;
+            case 4:
+                LiverMeridian.liverSystems();
+                break;
+            case 5:
+                KidneyMeridian.kidneySystems();
+                break;
+            case 6:
+                LargeIntestine.largeIntestineSystems();
+                break;
+            case 7:
+                SmallIntestineMeridian.smallIntestineSystems();
+                break;
+            case 8:
+                LungMeridian.lungSystems();
+                break;
+            case 9:
+                HeartMeridian.heartSystems();
+                break;
+            case 10:
+                TripleBurnerMeridian.TripleBurnerSystems();
+                break;
+            case 11:
+                PericardiumMeridian.pericardiumSystems();
+                break;
+            default:
+                System.out.println("Not a valid option");
+                break;
+        }
+    }
 }

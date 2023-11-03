@@ -1,7 +1,7 @@
 public class StomachMeridian {
     private static final String sickMeridian = "Stomach";
     private static final String s1 = "Large Intestine";
-    private static final String s2 = "Triple Burner";
+    private static final String s2 = "Pericardium";
     private static final String s3 = "Spleen";
     private static final String s4 = "Pericardium";
     private static final String s5 = "Large Intestine";
