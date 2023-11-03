@@ -12,7 +12,6 @@ public class Main {
 
              while(true){
                 System.out.print("\nWould you like to choose again? 1 - Yes, 2 - No : ");
-
                 try {
                     chooseAgain = scanner.nextInt();
                     if (chooseAgain == 1 || chooseAgain == 2) {
@@ -24,7 +23,6 @@ public class Main {
                     scanner.nextLine();
                 }
             }
-
         } while (chooseAgain == 1);
 
         System.out.println("Thank you for using the Balance Acupuncture App");
@@ -36,9 +34,22 @@ public class Main {
     public static void printOptions(){
         System.out.println("MERIDIANS");
         SickMeridians.printSickMeridians();
+        int sickMeridian;
 
-        System.out.print("\nPlease select the sick meridian: ");
-        int sickMeridian = scanner.nextInt();
+        while(true) {
+            try {
+                System.out.print("\nPlease select the sick meridian: ");
+                sickMeridian = scanner.nextInt();
+                if(sickMeridian >= 1 && sickMeridian <= 11){
+                    break;
+                }
+                System.out.println("Please enter an option between 1 - 11");
+            }
+            catch(InputMismatchException e){
+                System.out.println("Invalid entry");
+                scanner.nextLine();
+            }
+        }
         SickMeridians.pickSickMeridianOptions(sickMeridian);
     }
 }

@@ -12,45 +12,40 @@ public class SickMeridians {
     private static final String tripleBurner = "Triple Burner";
 
     //GETTERS
-    public String getBladder(){
+    public static String getBladder(){
         return bladder;
     }
-
     public static String getStomach() {
         return stomach;
     }
-
     public static String getGallBladder() {
         return gallBladder;
     }
-
     public static String getLiver() {
         return liver;
     }
-
     public static String getKidney() {
         return kidney;
     }
-
     public static String getLargeIntestine() {
         return largeIntestine;
     }
-
     public static String getSmallIntestine() {
         return smallIntestine;
     }
-
     public static String getLung() {
         return lung;
     }
-
     public static String getHeart() {
         return heart;
     }
-
     public static String getTripleBurner() {
         return tripleBurner;
     }
+    public static String getPericardium() {
+        return pericardium;
+    }
+
 
     // METHODS
     public static void printSickMeridians(){
@@ -64,6 +59,7 @@ public class SickMeridians {
         System.out.println(("8. " + lung));
         System.out.println(("9. " + heart));
         System.out.println(("10. " + tripleBurner));
+        System.out.println(("11. " + pericardium));
     }
 
     public static void pickSickMeridianOptions(int sickMeridian){
