@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -9,12 +10,21 @@ public class Main {
         do {
             printOptions();
 
-            // TO DO - put check if entry is 1 or 2, else keep asking to enter valid option
-            System.out.println("\nWould you like to choose again? 1 - Yes, 2 - No");
-            chooseAgain = scanner.nextInt();
-            if (chooseAgain != 1) {
-                break;
+             while(true){
+                System.out.print("\nWould you like to choose again? 1 - Yes, 2 - No : ");
+
+                try {
+                    chooseAgain = scanner.nextInt();
+                    if (chooseAgain == 1 || chooseAgain == 2) {
+                        break;
+                    }
+                }
+                catch(InputMismatchException e) {
+                    System.out.print("Invalid option\n");
+                    scanner.nextLine();
+                }
             }
+
         } while (chooseAgain == 1);
 
         System.out.println("Thank you for using the Balance Acupuncture App");
@@ -30,4 +40,5 @@ public class Main {
         int sickMeridian = scanner.nextInt();
         SickMeridians.pickSickMeridianOptions(sickMeridian);
     }
+
 }
